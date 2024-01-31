@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia</title>
+    <link rel="stylesheet" href="enfeite.css">
+</head>
+<body>
+    <h1>Criptografar</h1>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" class="entrada" id="entrada" name="entrada" placeholder="Digite seu texto">
+            <aside>
+                <p name="saida" id="saida"></p>
+            </aside>
+        </div>
+        <div class="button-container">
+            <button onclick="cripto()">Criptografar</button>
+            <button onclick="descripto()">Descriptografar</button>
+            <button onclick="copiarTexto()" id="copia" hidden>Copiar</button>
+        </div>
+    </div>
+    <script src="criptografia.js"></script>
+</body>
+</html>
