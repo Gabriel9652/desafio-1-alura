@@ -17,11 +17,10 @@ function cripto() {
     let campo = document.querySelector("p[name='saida']");
     campo.innerHTML = palavra;
 }
-
 function descripto() {
-    let palavra = document.getElementsByClassName('entrada')[0].value;
+    let palavra1 = document.getElementsByClassName('entrada')[0].value;
     let verificacao = /^[a-z\s]+$/;
-    if (!verificacao.test(palavra)) {
+    if (!verificacao.test(palavra1)) {
         palavra = "Somente letras minúsculas e sem símbolos";
     } else {
         var botao = document.getElementById("copia");
@@ -33,9 +32,10 @@ function descripto() {
             .replace(/ai/g, "a")
             .replace(/ober/g, "o")
             .replace(/ufat/g, "u");
+      
     }
     let campo = document.querySelector("p[name='saida']");
-    campo.innerHTML = palavra;
+    campo.innerHTML = palavra1;
 }
 function copiarTexto() {
     
